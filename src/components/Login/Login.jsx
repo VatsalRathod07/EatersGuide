@@ -30,7 +30,7 @@ const Login = ({ onLogin }) => {
 
   return (
     <div className="bg-LightGray min-h-screen flex items-center justify-center">
-      <div className="max-w-md w-full px-6 py-8 bg-white rounded-lg shadow-lg">
+      <div className="max-w-md m-10 w-full px-6 py-8 bg-white rounded-lg shadow-lg">
         <h1 className="text-2xl font-bold text-gray-800 mb-8 text-center">Eater's Guide</h1>
         <form onSubmit={handleSubmit} className="flex flex-col">
           <input
