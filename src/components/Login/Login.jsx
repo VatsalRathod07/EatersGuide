@@ -1,9 +1,17 @@
-import React, { useState } from 'react';
-import { Navigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 
 const Login = ({ onLogin }) => {
   const [email, setEmail] = useState('Eaterguide@gmail.com');
   const [password, setPassword] = useState('1234');
+
+  useEffect(() => {
+    // Check if the user is already logged in
+    const isLoggedIn = localStorage.getItem('isLoggedIn');
+    if (isLoggedIn === 'true') {
+      // Perform automatic login
+      onLogin();
+    }
+  }, []);
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -20,6 +28,9 @@ const Login = ({ onLogin }) => {
 
     // Check if the entered email and password match the credentials
     if (email === 'Eaterguide@gmail.com' && password === '1234') {
+      // Persist the login state
+      localStorage.setItem('isLoggedIn', 'true');
+
       // Perform login actions
       onLogin();
     } else {

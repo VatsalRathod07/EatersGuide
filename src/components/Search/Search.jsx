@@ -6,7 +6,7 @@ const Search = () => {
   return (
     <div className="search flex flex-col gap-5 rounded-md p-7 w-[80%] mx-auto border-b-2 border-LightGray">
       <form action="">
-        <div className="firstDiv flex flex-col gap-5 sm:flex-row sm:gap-3 border-LightGray rounded-md p-3 shadow-LightGray justify-center">
+        <div className="flex flex-col gap-5 sm:flex-row sm:gap-3 border-LightGray rounded-md p-3 shadow-LightGray justify-center">
           <div className="flex gap-2 items-center">
             <BiSearch size={25} className="icon" />
             <input
