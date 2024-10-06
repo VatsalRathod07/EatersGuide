@@ -44,7 +44,7 @@ const Jobs = [
     "rating": 4.4,
     "price_range": "$",
     "website": "https://www.mamamiastacos.com",
-    "image": "https://gothammag.com/get/files/image/galleries/mexican-food-jarett-lopez-unsplash.jpg",
+    "image": "https://bpprivilegeclub.com/blog/wp-content/uploads/2021/07/bigstock-Fresh-Mexican-Tacos-Al-Pastor-368745250-scaled.jpg",
   },
   {
     "name": "Thai Delight",
